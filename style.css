@@ -1,0 +1,70 @@
+   .header{
+            grid-area: area_header;
+        }
+        .menu{
+            grid-area: area_menu;
+        }
+        .content{
+            grid-area: area_content;
+            
+        }
+        .hasil{
+            grid-area: area_hasil;
+        }
+        .footer{
+            grid-area: area_footer;
+        }
+        .container{
+            display: grid;
+            grid-template-areas:
+                'area_header area_header area_header area_header area_header area_header'
+                'area_menu area_content area_content area_content area_content area_hasil'
+                'area_footer area_footer area_footer area_footer area_footer area_footer'
+            ;
+            gap: 10px;
+            background-color: rgb(74, 136, 186);
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        .container>div{
+            background-color: rgb(106, 150, 212);
+            text-align: center;
+            border-radius: 10px;
+            font-size: x-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+            Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            width: 60%;
+        }
+
+        table{
+            font-size: medium;
+            width: 80%;
+            text-align: left;
+        }
+
+        button{
+            padding: 10px 30px 10px 30px;
+            border-radius: 10px;
+            font-size: large;
+            font-weight: bolder;
+            background-color: grey;
+            color:white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: blueviolet;
+            color:black;
+        }
+
+        .warning{
+            color:brown;
+            font-size: small;
+            visibility: hidden;
+        }
